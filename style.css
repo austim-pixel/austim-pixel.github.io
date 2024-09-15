@@ -1,21 +1,17 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: #5CAB7D ;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
     font-size: 1.5vw;
     margin: 0px
+    
     
 }
 
 #logo {
     margin: 0px;
     padding: 8px;
-    font-family: "Reddit Sans Condensed", sans-serif;
-    box-shadow: 1px 1px 3px 1px darkgreen;
-    width: 17%;
-    text-shadow: 
-    1px 1px 0 #000,  
-     -1px 1px 0 #000,
-    1px  -1px 0 #000,
-     -1px  -1px 0 #000; /* Outline color and size */;
+    font-family: "Dosis", sans-serif;
+    width: 20%;
 }
 
 ul {
@@ -23,7 +19,7 @@ ul {
 }
 
 body > header {
-    background-color: green;
+    background-color: #5A9367;
     color: white;
     display: flex;
     height: 11vh;
@@ -49,7 +45,7 @@ body > header > nav > ul {
     color: white;
     text-decoration: none;
     padding: 12px;
-    border: 1px solid darkgreen;
+    border: 1px solid black;
     border-radius: 10%;
 }
 
@@ -58,30 +54,30 @@ body > main article {
     margin: auto
 }
 
+
+
 #main-content {
     display: flex;
     justify-content: space-around;
 }
 
 #main-content > div {
-    width: 80%;
+    width: 70%;
 }
 
-form {
-    text-align: center
-}
 
 h2 {
     text-align: center;
 }
-body > footer {
-    background-color:green;
-    color: white;
-    display: flex;
-}
 
-img {
-    border-radius: 50%;
+body > footer {
+    display: flex;
+    font-family: "Dosis", sans-serif;
+    padding: 14px;
+    background-color: #5A9367;
+    color: white;
+    text-align: center;
+    grid-area: footer;
 }
 
 #footer-ul {
@@ -98,3 +94,30 @@ img {
     color: white;
     text-decoration: none;
 }
+
+img {
+    padding: 3px;
+    width: 20vh;
+}
+
+#side-article {
+    display: block;
+}
+
+#side-article > footer {
+    display: block;
+}
+
+#side-article > p {
+    justify-content: space-around;
+}
+
+#grid-container {
+display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu "
+    "footer footer";
+    grid-template-columns: 1fr 6fr;
+}
+
