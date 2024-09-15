@@ -98,6 +98,7 @@ body > footer {
 img {
     padding: 3px;
     width: 20vh;
+    border-radius: 0%;
 }
 
 #side-article {
